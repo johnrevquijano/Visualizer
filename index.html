@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finite Automaton Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Finite Automaton Visualizer</h1>
+        <form id="automataForm">
+            <div>
+                <label for="states">States (comma separated):</label>
+                <input type="text" id="states" required>
+            </div>
+            <div>
+                <label for="alphabet">Alphabet (comma separated):</label>
+                <input type="text" id="alphabet" required>
+            </div>
+            <div>
+                <label for="automataType">Automata Type:</label>
+                <select id="automataType">
+                    <option value="dfa">DFA</option>
+                    <option value="nfa">NFA</option>
+                </select>
+            </div>
+            <button type="submit">Generate Transition Table</button>
+            <button type="button" id="resetButton">Reset</button>
+        </form>
+        <div id="errorMessage" class="error"></div>
+        <div id="transitionTable"></div>
+        <div id="finalStatesCheckboxLabel" style="display: none;">
+            <h3>Final States:</h3>
+            <div id="finalStatesContainer"></div>
+        </div>
+        <button id="generateDiagramButton">Generate Transition Diagram</button>
+        <canvas id="transitionDiagram"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

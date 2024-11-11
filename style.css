@@ -1,0 +1,86 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #fafafa; /* Light background color */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF; /* Main title color in blue */
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 20px; /* Space below title */
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    margin-left: 10px;
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Full width minus padding */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+th, td {
+    border: 1px solid #007BFF; /* Blue border for table cells */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e0f0ff; /* Light blue for headers */
+    color: #007BFF; /* Header text color */
+}
+
+td {
+    background-color: #ffffff; /* White background for cells */
+}
+
+td input[type="text"] {
+    width: 100%; /* Full width for input */
+    border: 1px solid #ccc; /* Default border */
+    border-radius: 3px; /* Slightly rounded corners */
+    padding: 5px; /* Padding inside inputs */
+}
+
+canvas {
+    border: 1px solid #007BFF; /* Blue border for the canvas */
+    display: block; /* Centers the canvas */
+    margin: 20px auto; /* Centers the canvas */
+    background-color: #ffffff; /* White background for canvas */
+}
